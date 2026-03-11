@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: kopringsample
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/kopring-sample
+    # url: jdbc:h2:mem:kopring-sample
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+logging:
+  level:
+    org.hibernate.SQL: debug
+REST_API_KEY: "066e8acf1d725dd734801ec61f441c74"
